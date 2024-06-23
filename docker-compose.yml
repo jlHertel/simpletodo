@@ -1,0 +1,8 @@
+services:
+  prod:
+    image: my-custom-container
+    build:
+      dockerfile: docker/prod.Dockerfile
+      context: ./
+    ports:
+      - "8080:8080"
